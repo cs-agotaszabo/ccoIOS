@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A77CE0162542DC3300D8C614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0152542DC3300D8C614 /* AppDelegate.swift */; };
+		A77CE0182542DC3300D8C614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0172542DC3300D8C614 /* SceneDelegate.swift */; };
+		A77CE01A2542DC3300D8C614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0192542DC3300D8C614 /* ViewController.swift */; };
+		A77CE01D2542DC3300D8C614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77CE01B2542DC3300D8C614 /* Main.storyboard */; };
+		A77CE0202542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A77CE01E2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld */; };
+		A77CE0222542DC3400D8C614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE0212542DC3400D8C614 /* Assets.xcassets */; };
+		A77CE0252542DC3400D8C614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77CE0232542DC3400D8C614 /* LaunchScreen.storyboard */; };
+		A77CE0302542DC3500D8C614 /* Cereri_CobaltSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE02F2542DC3500D8C614 /* Cereri_CobaltSignTests.swift */; };
+		A77CE03B2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE03A2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A77CE02C2542DC3500D8C614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77CE00A2542DC3300D8C614 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77CE0112542DC3300D8C614;
+			remoteInfo = Cereri_CobaltSign;
+		};
+		A77CE0372542DC3500D8C614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77CE00A2542DC3300D8C614 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77CE0112542DC3300D8C614;
+			remoteInfo = Cereri_CobaltSign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A77CE0122542DC3300D8C614 /* Cereri_CobaltSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cereri_CobaltSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77CE0152542DC3300D8C614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A77CE0172542DC3300D8C614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A77CE0192542DC3300D8C614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A77CE01C2542DC3300D8C614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A77CE01F2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cereri_CobaltSign.xcdatamodel; sourceTree = "<group>"; };
+		A77CE0212542DC3400D8C614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77CE0242542DC3400D8C614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A77CE0262542DC3400D8C614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77CE02B2542DC3500D8C614 /* Cereri_CobaltSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cereri_CobaltSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77CE02F2542DC3500D8C614 /* Cereri_CobaltSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cereri_CobaltSignTests.swift; sourceTree = "<group>"; };
+		A77CE0312542DC3500D8C614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77CE0362542DC3500D8C614 /* Cereri_CobaltSignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cereri_CobaltSignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77CE03A2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cereri_CobaltSignUITests.swift; sourceTree = "<group>"; };
+		A77CE03C2542DC3500D8C614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A77CE00F2542DC3300D8C614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77CE0282542DC3500D8C614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77CE0332542DC3500D8C614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A77CE0092542DC3300D8C614 = {
+			isa = PBXGroup;
+			children = (
+				A77CE0142542DC3300D8C614 /* Cereri_CobaltSign */,
+				A77CE02E2542DC3500D8C614 /* Cereri_CobaltSignTests */,
+				A77CE0392542DC3500D8C614 /* Cereri_CobaltSignUITests */,
+				A77CE0132542DC3300D8C614 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A77CE0132542DC3300D8C614 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE0122542DC3300D8C614 /* Cereri_CobaltSign.app */,
+				A77CE02B2542DC3500D8C614 /* Cereri_CobaltSignTests.xctest */,
+				A77CE0362542DC3500D8C614 /* Cereri_CobaltSignUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A77CE0142542DC3300D8C614 /* Cereri_CobaltSign */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE0152542DC3300D8C614 /* AppDelegate.swift */,
+				A77CE0172542DC3300D8C614 /* SceneDelegate.swift */,
+				A77CE0212542DC3400D8C614 /* Assets.xcassets */,
+				A77CE04B2542DDC100D8C614 /* Models */,
+				A77CE04C2542DDD800D8C614 /* Views */,
+				A77CE0262542DC3400D8C614 /* Info.plist */,
+				A77CE01E2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld */,
+			);
+			path = Cereri_CobaltSign;
+			sourceTree = "<group>";
+		};
+		A77CE02E2542DC3500D8C614 /* Cereri_CobaltSignTests */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE02F2542DC3500D8C614 /* Cereri_CobaltSignTests.swift */,
+				A77CE0312542DC3500D8C614 /* Info.plist */,
+			);
+			path = Cereri_CobaltSignTests;
+			sourceTree = "<group>";
+		};
+		A77CE0392542DC3500D8C614 /* Cereri_CobaltSignUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE03A2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift */,
+				A77CE03C2542DC3500D8C614 /* Info.plist */,
+			);
+			path = Cereri_CobaltSignUITests;
+			sourceTree = "<group>";
+		};
+		A77CE04B2542DDC100D8C614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A77CE04C2542DDD800D8C614 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE04E2542DE0000D8C614 /* Storyboard */,
+				A77CE04D2542DDE700D8C614 /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A77CE04D2542DDE700D8C614 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE0192542DC3300D8C614 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A77CE04E2542DE0000D8C614 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE01B2542DC3300D8C614 /* Main.storyboard */,
+				A77CE0232542DC3400D8C614 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A77CE0112542DC3300D8C614 /* Cereri_CobaltSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77CE03F2542DC3500D8C614 /* Build configuration list for PBXNativeTarget "Cereri_CobaltSign" */;
+			buildPhases = (
+				A77CE00E2542DC3300D8C614 /* Sources */,
+				A77CE00F2542DC3300D8C614 /* Frameworks */,
+				A77CE0102542DC3300D8C614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cereri_CobaltSign;
+			productName = Cereri_CobaltSign;
+			productReference = A77CE0122542DC3300D8C614 /* Cereri_CobaltSign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A77CE02A2542DC3500D8C614 /* Cereri_CobaltSignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77CE0422542DC3500D8C614 /* Build configuration list for PBXNativeTarget "Cereri_CobaltSignTests" */;
+			buildPhases = (
+				A77CE0272542DC3500D8C614 /* Sources */,
+				A77CE0282542DC3500D8C614 /* Frameworks */,
+				A77CE0292542DC3500D8C614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77CE02D2542DC3500D8C614 /* PBXTargetDependency */,
+			);
+			name = Cereri_CobaltSignTests;
+			productName = Cereri_CobaltSignTests;
+			productReference = A77CE02B2542DC3500D8C614 /* Cereri_CobaltSignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A77CE0352542DC3500D8C614 /* Cereri_CobaltSignUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77CE0452542DC3500D8C614 /* Build configuration list for PBXNativeTarget "Cereri_CobaltSignUITests" */;
+			buildPhases = (
+				A77CE0322542DC3500D8C614 /* Sources */,
+				A77CE0332542DC3500D8C614 /* Frameworks */,
+				A77CE0342542DC3500D8C614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77CE0382542DC3500D8C614 /* PBXTargetDependency */,
+			);
+			name = Cereri_CobaltSignUITests;
+			productName = Cereri_CobaltSignUITests;
+			productReference = A77CE0362542DC3500D8C614 /* Cereri_CobaltSignUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A77CE00A2542DC3300D8C614 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					A77CE0112542DC3300D8C614 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					A77CE02A2542DC3500D8C614 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = A77CE0112542DC3300D8C614;
+					};
+					A77CE0352542DC3500D8C614 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = A77CE0112542DC3300D8C614;
+					};
+				};
+			};
+			buildConfigurationList = A77CE00D2542DC3300D8C614 /* Build configuration list for PBXProject "Cereri_CobaltSign" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A77CE0092542DC3300D8C614;
+			productRefGroup = A77CE0132542DC3300D8C614 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A77CE0112542DC3300D8C614 /* Cereri_CobaltSign */,
+				A77CE02A2542DC3500D8C614 /* Cereri_CobaltSignTests */,
+				A77CE0352542DC3500D8C614 /* Cereri_CobaltSignUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77CE0102542DC3300D8C614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77CE0252542DC3400D8C614 /* LaunchScreen.storyboard in Resources */,
+				A77CE0222542DC3400D8C614 /* Assets.xcassets in Resources */,
+				A77CE01D2542DC3300D8C614 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77CE0292542DC3500D8C614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77CE0342542DC3500D8C614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A77CE00E2542DC3300D8C614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77CE01A2542DC3300D8C614 /* ViewController.swift in Sources */,
+				A77CE0202542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld in Sources */,
+				A77CE0162542DC3300D8C614 /* AppDelegate.swift in Sources */,
+				A77CE0182542DC3300D8C614 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77CE0272542DC3500D8C614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77CE0302542DC3500D8C614 /* Cereri_CobaltSignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77CE0322542DC3500D8C614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77CE03B2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A77CE02D2542DC3500D8C614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77CE0112542DC3300D8C614 /* Cereri_CobaltSign */;
+			targetProxy = A77CE02C2542DC3500D8C614 /* PBXContainerItemProxy */;
+		};
+		A77CE0382542DC3500D8C614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77CE0112542DC3300D8C614 /* Cereri_CobaltSign */;
+			targetProxy = A77CE0372542DC3500D8C614 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A77CE01B2542DC3300D8C614 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77CE01C2542DC3300D8C614 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A77CE0232542DC3400D8C614 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77CE0242542DC3400D8C614 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A77CE03D2542DC3500D8C614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A77CE03E2542DC3500D8C614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A77CE0402542DC3500D8C614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cereri_CobaltSign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "singleview.Cereri-CobaltSign";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A77CE0412542DC3500D8C614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cereri_CobaltSign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "singleview.Cereri-CobaltSign";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A77CE0432542DC3500D8C614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cereri_CobaltSignTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "singleview.Cereri-CobaltSignTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cereri_CobaltSign.app/Cereri_CobaltSign";
+			};
+			name = Debug;
+		};
+		A77CE0442542DC3500D8C614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cereri_CobaltSignTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "singleview.Cereri-CobaltSignTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cereri_CobaltSign.app/Cereri_CobaltSign";
+			};
+			name = Release;
+		};
+		A77CE0462542DC3500D8C614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cereri_CobaltSignUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "singleview.Cereri-CobaltSignUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cereri_CobaltSign;
+			};
+			name = Debug;
+		};
+		A77CE0472542DC3500D8C614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cereri_CobaltSignUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "singleview.Cereri-CobaltSignUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cereri_CobaltSign;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A77CE00D2542DC3300D8C614 /* Build configuration list for PBXProject "Cereri_CobaltSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77CE03D2542DC3500D8C614 /* Debug */,
+				A77CE03E2542DC3500D8C614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77CE03F2542DC3500D8C614 /* Build configuration list for PBXNativeTarget "Cereri_CobaltSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77CE0402542DC3500D8C614 /* Debug */,
+				A77CE0412542DC3500D8C614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77CE0422542DC3500D8C614 /* Build configuration list for PBXNativeTarget "Cereri_CobaltSignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77CE0432542DC3500D8C614 /* Debug */,
+				A77CE0442542DC3500D8C614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77CE0452542DC3500D8C614 /* Build configuration list for PBXNativeTarget "Cereri_CobaltSignUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77CE0462542DC3500D8C614 /* Debug */,
+				A77CE0472542DC3500D8C614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A77CE01E2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A77CE01F2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodel */,
+			);
+			currentVersion = A77CE01F2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodel */;
+			path = Cereri_CobaltSign.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A77CE00A2542DC3300D8C614 /* Project object */;
+}
