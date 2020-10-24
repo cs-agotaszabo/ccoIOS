@@ -77,11 +77,8 @@ class SettingsViewController: UIViewController {
         defaults.synchronize()
         
         let signImage = canvasView.asImage()
-        saveImage(image: signImage)
-        
+        _ = saveImage(image: signImage, name: "signature.png")
     }
-    
-    
 
 }
 

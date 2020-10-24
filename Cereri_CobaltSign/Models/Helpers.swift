@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: Image
-func saveImage(image: UIImage) -> Bool {
+func saveImage(image: UIImage, name: String) -> Bool {
     guard let data = image.jpegData(compressionQuality: 1) ?? image.pngData() else {
         return false
     }
@@ -17,7 +17,7 @@ func saveImage(image: UIImage) -> Bool {
         return false
     }
     do {
-        try data.write(to: directory.appendingPathComponent("signature.png")!)
+        try data.write(to: directory.appendingPathComponent(name)!)
         return true
     } catch {
         print(error.localizedDescription)
@@ -79,3 +79,46 @@ func dateComponents(date: Date) -> (d: Int, m: Int, y: Int) {
 
 }
 
+// MARK: Text
+func textToImage(drawText text: String,
+                 inImage image: UIImage,
+                 atPoint point: CGPoint) -> UIImage {
+    let textColor = UIColor.red
+    let textFont = UIFont(name: "Helvetica Bold", size: 24)!
+
+    let scale = UIScreen.main.scale
+    UIGraphicsBeginImageContextWithOptions(image.size, false, scale)
+
+    let textFontAttributes = [
+        NSAttributedString.Key.font: textFont,
+        NSAttributedString.Key.foregroundColor: textColor,
+        ] as [NSAttributedString.Key : Any]
+    image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
+
+    let rect = CGRect(origin: point, size: image.size)
+    text.draw(in: rect, withAttributes: textFontAttributes)
+
+    let newImage = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+
+    return newImage!
+}
+
+
+// MARK: PDF
+
+func createPDF(image: UIImage) -> NSData? {
+
+    let pdfData = NSMutableData()
+    let pdfConsumer = CGDataConsumer(data: pdfData as CFMutableData)!
+
+    var mediaBox = CGRect.init(x: 0, y: 0, width: image.size.width, height: image.size.height)
+
+    let pdfContext = CGContext(consumer: pdfConsumer, mediaBox: &mediaBox, nil)!
+
+    pdfContext.beginPage(mediaBox: &mediaBox)
+    pdfContext.draw(image.cgImage!, in: mediaBox)
+    pdfContext.endPage()
+
+    return pdfData
+}
