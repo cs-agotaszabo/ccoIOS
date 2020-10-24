@@ -18,17 +18,17 @@ class MainViewController: UIViewController {
         checkSettings()
     }
     
+    @IBAction func showSettings(_ sender: Any) {
+        performSegue(withIdentifier: "settingsSegue", sender: nil)
+    }
+    
     fileprivate func checkSettings() {
         // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
-        defaults.set("Vali", forKey: "firstname")
-        
+       
         let firstname = defaults.string(forKey: "firstname") ?? ""
-        print("firstname = \(firstname)")
         let lastname = defaults.string(forKey: "lastname") ?? ""
-        print("lastname = \(lastname)")
         let job = defaults.string(forKey: "job") ?? ""
-        print("job = \(job)")
         
         if firstname == "" || lastname == "" || job == "" {
             performSegue(withIdentifier: "settingsSegue", sender: nil)

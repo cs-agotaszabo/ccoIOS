@@ -7,48 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "612216EB-08D6-4AD6-B703-CD770204104E"
-            shouldBeEnabled = "Yes"
+            uuid = "CE1FF995-3DA0-49DB-B74B-704C76A6CA1A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Cereri_CobaltSign/Views/ViewControllers/OdihnaViewController.swift"
+            filePath = "Cereri_CobaltSign/Views/Canvas.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "addHTML()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "touchesBegan(_:with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "01F32C33-E5B2-4097-82CB-2BB22806F015"
-            shouldBeEnabled = "Yes"
+            uuid = "B31C32FB-71BA-4654-9CB4-B64710CD764A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Cereri_CobaltSign/Views/ViewControllers/OdihnaViewController.swift"
+            filePath = "Cereri_CobaltSign/Views/ViewControllers/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "addHTML()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "checkSettings()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "82D7BFE6-9480-4A88-9946-DC91EC42B9A3"
+            uuid = "41B7B639-F1BB-443C-A8E3-0DC38C1246D5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Cereri_CobaltSign/Views/ViewControllers/OdihnaViewController.swift"
+            filePath = "Cereri_CobaltSign/Views/ViewControllers/SettingsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "addHTML()"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "validateDataInTextFIelds()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89B026E7-C4D1-492F-A25B-8A90043E1FCD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cereri_CobaltSign/Views/ViewControllers/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
