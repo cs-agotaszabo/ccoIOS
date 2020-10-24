@@ -45,8 +45,18 @@ class SettingsViewController: UIViewController {
             imageView.image = signature
             //view.addSubview(imageView)
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapGesture.numberOfTouchesRequired = 1
+        tapGesture.numberOfTapsRequired = 1
+        view.addGestureRecognizer(tapGesture)
     }
     
+    @objc fileprivate func hideKeyboard() {
+        lastnameTextfield.resignFirstResponder()
+        firstnameTextfield.resignFirstResponder()
+        jobTextfield.resignFirstResponder()
+    }
 
     fileprivate func doDismiss() {
         dismiss(animated: true, completion: nil)

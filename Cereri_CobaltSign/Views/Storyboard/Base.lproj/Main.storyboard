@@ -85,13 +85,6 @@
                                     <segue destination="s3a-uE-nJA" kind="modal" modalPresentationStyle="fullScreen" id="X3d-WI-5Su"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPd-T7-rNA">
-                                <rect key="frame" x="354" y="88" width="40" height="30"/>
-                                <state key="normal" title="Setări"/>
-                                <connections>
-                                    <action selector="showSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7h-5J-Edy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,15 +94,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ua-61-Hh7" secondAttribute="trailing" constant="40" id="MJd-ZY-cSu"/>
                             <constraint firstItem="77A-2X-Uk7" firstAttribute="top" secondItem="2ua-61-Hh7" secondAttribute="bottom" constant="40" id="MZy-HX-GqE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="77A-2X-Uk7" secondAttribute="bottom" constant="80" id="SDK-7e-Nik"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vPd-T7-rNA" secondAttribute="trailing" constant="28" id="XtJ-ZO-FSi"/>
-                            <constraint firstItem="vPd-T7-rNA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="avB-vD-XjM"/>
                             <constraint firstItem="77A-2X-Uk7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="htQ-oA-4VB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="77A-2X-Uk7" secondAttribute="trailing" constant="40" id="jHS-1p-oA0"/>
                             <constraint firstItem="Tq8-rv-tbO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:2" id="l6l-mc-VXP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pfE-YG-qBI">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="ARK-j8-9Lc">
+                        <barButtonItem key="rightBarButtonItem" title="Setări" id="ARK-j8-9Lc">
                             <connections>
                                 <segue destination="rPg-Y1-5dn" kind="presentation" modalPresentationStyle="fullScreen" id="G3X-VB-tvm"/>
                             </connections>

@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
-class OdihnaViewController: UIViewController {
+class OdihnaViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
     
@@ -30,7 +31,9 @@ class OdihnaViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 
             self.present(alert, animated: true)
+            return
         }
+        sendEmail()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,4 +43,24 @@ class OdihnaViewController: UIViewController {
             previewVC.endDate = endDatePicker.date
         }
     }
+    
+    //MARK: Private
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["valentina.ventel@cobaltsign.com"])
+            mail.setSubject("Cerere")
+            mail.setMessageBody("Salut, Arthur, \n\nTe rog să-mi aprobi cererea anexată. \n\nMulțumesc! ", isHTML: false)
+
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+        }
+    }
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+
 }
