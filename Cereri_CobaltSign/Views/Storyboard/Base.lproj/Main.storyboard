@@ -282,15 +282,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Învoire" id="yhI-q3-lBX"/>
+                    <connections>
+                        <outlet property="datePikerView" destination="9rL-nJ-PAr" id="0Rm-IE-Nw1"/>
+                        <outlet property="firstHour" destination="cMM-56-IJa" id="UlA-dp-9Ry"/>
+                        <outlet property="reasonText" destination="5TZ-On-JKd" id="Vh5-jx-Ua6"/>
+                        <outlet property="recoveryProgramText" destination="DGu-zX-tB9" id="L9h-Bp-CFp"/>
+                        <outlet property="secondHour" destination="Q0P-8Q-8YX" id="9BR-pV-cnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYX-xR-0y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="562.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview Request View Controller-->
         <scene sceneID="fSf-am-HsW">
             <objects>
-                <viewController id="ELh-Zv-Wvb" sceneMemberID="viewController">
+                <viewController id="ELh-Zv-Wvb" customClass="PreviewRequestViewController" customModule="Cereri_CobaltSign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hYq-jn-zpF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,6 +315,9 @@
                             <constraint firstItem="SQq-fw-yG3" firstAttribute="leading" secondItem="AYm-Pl-Rsz" secondAttribute="leading" id="gEF-fU-cVP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="SQq-fw-yG3" id="dp9-zl-ZE7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9F-pA-fL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,7 +341,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prenume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKD-3V-Thd">
-                                <rect key="frame" x="20" y="212" width="374" height="24"/>
+                                <rect key="frame" x="20" y="208" width="374" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="j3Y-0A-vSn"/>
                                 </constraints>
@@ -340,7 +350,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funcție" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjO-lX-MNX">
-                                <rect key="frame" x="20" y="312" width="374" height="32"/>
+                                <rect key="frame" x="20" y="308" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="XZ2-qL-Qba"/>
                                 </constraints>
@@ -349,7 +359,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-Xb-cIp">
-                                <rect key="frame" x="20" y="136" width="374" height="44"/>
+                                <rect key="frame" x="20" y="132" width="374" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="xaF-3F-VaF"/>
                                 </constraints>
@@ -357,7 +367,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdi-KD-mmA">
-                                <rect key="frame" x="20" y="236" width="374" height="44"/>
+                                <rect key="frame" x="20" y="232" width="374" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="cbT-od-PQ1"/>
                                 </constraints>
@@ -365,7 +375,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-H7-6bS">
-                                <rect key="frame" x="20" y="344" width="374" height="44"/>
+                                <rect key="frame" x="20" y="340" width="374" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="qOW-DB-Xfz"/>
                                 </constraints>
@@ -373,21 +383,21 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbJ-me-PBx">
-                                <rect key="frame" x="176.5" y="634" width="61" height="30"/>
+                                <rect key="frame" x="176.5" y="630" width="61" height="30"/>
                                 <state key="normal" title="Salvează"/>
                                 <connections>
                                     <action selector="doSave:" destination="rPg-Y1-5dn" eventType="touchUpInside" id="mfZ-a5-0yS"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVI-Y0-mbR" customClass="Canvas" customModule="Cereri_CobaltSign" customModuleProvider="target">
-                                <rect key="frame" x="20" y="452" width="374" height="128"/>
+                                <rect key="frame" x="20" y="448" width="374" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="vyS-k0-xzS"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semnatură" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcb-ou-D5k">
-                                <rect key="frame" x="20" y="420" width="374" height="32"/>
+                                <rect key="frame" x="20" y="416" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Lnv-Kh-7u1"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Wgy-dK-gew"/>
@@ -423,7 +433,6 @@
                             <constraint firstItem="QbJ-me-PBx" firstAttribute="top" secondItem="FVI-Y0-mbR" secondAttribute="bottom" constant="54" id="cGQ-rB-aeX"/>
                             <constraint firstItem="uKD-3V-Thd" firstAttribute="top" secondItem="aEC-Xb-cIp" secondAttribute="bottom" constant="32" id="cmd-6Z-n94"/>
                             <constraint firstItem="pjO-lX-MNX" firstAttribute="leading" secondItem="0Qq-Q1-oas" secondAttribute="leading" id="dUY-DS-GJF"/>
-                            <constraint firstItem="aEC-Xb-cIp" firstAttribute="top" secondItem="0Qq-Q1-oas" secondAttribute="bottom" constant="4" id="ixk-TB-zQS"/>
                             <constraint firstItem="Jdi-KD-mmA" firstAttribute="leading" secondItem="0Qq-Q1-oas" secondAttribute="leading" id="jus-fa-AWD"/>
                             <constraint firstItem="uKD-3V-Thd" firstAttribute="trailing" secondItem="0Qq-Q1-oas" secondAttribute="trailing" id="p8W-0U-Y28"/>
                             <constraint firstItem="Jdi-KD-mmA" firstAttribute="trailing" secondItem="0Qq-Q1-oas" secondAttribute="trailing" id="trb-M0-fvs"/>
