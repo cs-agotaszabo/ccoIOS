@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7509EF22543F61100022320 /* concediu.html in Resources */ = {isa = PBXBuildFile; fileRef = A7509EF12543F61100022320 /* concediu.html */; };
+		A7509EF72543F61500022320 /* invoire.html in Resources */ = {isa = PBXBuildFile; fileRef = A7509EF62543F61500022320 /* invoire.html */; };
+		A7509F0C2544346800022320 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7509F0B2544346800022320 /* TestViewController.swift */; };
 		A77CE0162542DC3300D8C614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0152542DC3300D8C614 /* AppDelegate.swift */; };
 		A77CE0182542DC3300D8C614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0172542DC3300D8C614 /* SceneDelegate.swift */; };
 		A77CE01A2542DC3300D8C614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0192542DC3300D8C614 /* ViewController.swift */; };
 		A77CE01D2542DC3300D8C614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77CE01B2542DC3300D8C614 /* Main.storyboard */; };
 		A77CE0202542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A77CE01E2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld */; };
-		A77CE0222542DC3400D8C614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE0212542DC3400D8C614 /* Assets.xcassets */; };
 		A77CE0252542DC3400D8C614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77CE0232542DC3400D8C614 /* LaunchScreen.storyboard */; };
 		A77CE0302542DC3500D8C614 /* Cereri_CobaltSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE02F2542DC3500D8C614 /* Cereri_CobaltSignTests.swift */; };
 		A77CE03B2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE03A2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift */; };
+		A77CE0532543138A00D8C614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE0522543138A00D8C614 /* Assets.xcassets */; };
+		A77CE05E2543401400D8C614 /* OdihnaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE05D2543401400D8C614 /* OdihnaViewController.swift */; };
+		A77CE0632543402500D8C614 /* InvoireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0622543402500D8C614 /* InvoireViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7509EF12543F61100022320 /* concediu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = concediu.html; path = ../../../../../Desktop/concediu.html; sourceTree = "<group>"; };
+		A7509EF62543F61500022320 /* invoire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = invoire.html; path = ../../../../../Desktop/invoire.html; sourceTree = "<group>"; };
+		A7509F0B2544346800022320 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A77CE0122542DC3300D8C614 /* Cereri_CobaltSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cereri_CobaltSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77CE0152542DC3300D8C614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A77CE0172542DC3300D8C614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A77CE0192542DC3300D8C614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A77CE01C2542DC3300D8C614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A77CE01F2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cereri_CobaltSign.xcdatamodel; sourceTree = "<group>"; };
-		A77CE0212542DC3400D8C614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77CE0242542DC3400D8C614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A77CE0262542DC3400D8C614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A77CE02B2542DC3500D8C614 /* Cereri_CobaltSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cereri_CobaltSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +58,9 @@
 		A77CE0362542DC3500D8C614 /* Cereri_CobaltSignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cereri_CobaltSignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77CE03A2542DC3500D8C614 /* Cereri_CobaltSignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cereri_CobaltSignUITests.swift; sourceTree = "<group>"; };
 		A77CE03C2542DC3500D8C614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77CE0522543138A00D8C614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77CE05D2543401400D8C614 /* OdihnaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdihnaViewController.swift; sourceTree = "<group>"; };
+		A77CE0622543402500D8C614 /* InvoireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoireViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7509EF02543F5CF00022320 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A77CE0522543138A00D8C614 /* Assets.xcassets */,
+				A7509EF62543F61500022320 /* invoire.html */,
+				A7509EF12543F61100022320 /* concediu.html */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		A77CE0092542DC3300D8C614 = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +123,9 @@
 			children = (
 				A77CE0152542DC3300D8C614 /* AppDelegate.swift */,
 				A77CE0172542DC3300D8C614 /* SceneDelegate.swift */,
-				A77CE0212542DC3400D8C614 /* Assets.xcassets */,
+				A77CE0262542DC3400D8C614 /* Info.plist */,
 				A77CE04B2542DDC100D8C614 /* Models */,
 				A77CE04C2542DDD800D8C614 /* Views */,
-				A77CE0262542DC3400D8C614 /* Info.plist */,
 				A77CE01E2542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld */,
 			);
 			path = Cereri_CobaltSign;
@@ -142,6 +161,7 @@
 			children = (
 				A77CE04E2542DE0000D8C614 /* Storyboard */,
 				A77CE04D2542DDE700D8C614 /* ViewControllers */,
+				A7509EF02543F5CF00022320 /* Assets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				A77CE0192542DC3300D8C614 /* ViewController.swift */,
+				A77CE05D2543401400D8C614 /* OdihnaViewController.swift */,
+				A77CE0622543402500D8C614 /* InvoireViewController.swift */,
+				A7509F0B2544346800022320 /* TestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -267,7 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77CE0252542DC3400D8C614 /* LaunchScreen.storyboard in Resources */,
-				A77CE0222542DC3400D8C614 /* Assets.xcassets in Resources */,
+				A77CE0532543138A00D8C614 /* Assets.xcassets in Resources */,
+				A7509EF22543F61100022320 /* concediu.html in Resources */,
+				A7509EF72543F61500022320 /* invoire.html in Resources */,
 				A77CE01D2542DC3300D8C614 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7509F0C2544346800022320 /* TestViewController.swift in Sources */,
+				A77CE05E2543401400D8C614 /* OdihnaViewController.swift in Sources */,
+				A77CE0632543402500D8C614 /* InvoireViewController.swift in Sources */,
 				A77CE01A2542DC3300D8C614 /* ViewController.swift in Sources */,
 				A77CE0202542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld in Sources */,
 				A77CE0162542DC3300D8C614 /* AppDelegate.swift in Sources */,
