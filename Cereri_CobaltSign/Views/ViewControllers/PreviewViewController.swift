@@ -16,8 +16,6 @@ class PreviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = ""
-        
         imageView.image = getSavedImage(named: "request.png")
     }
 }

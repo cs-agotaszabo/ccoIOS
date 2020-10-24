@@ -12,7 +12,7 @@ import MessageUI
 class OdihnaViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
-    
+    var pdfData: NSData? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +56,16 @@ class OdihnaViewController: UIViewController, MFMailComposeViewControllerDelegat
             mail.setToRecipients(["valentina.ventel@cobaltsign.com"])
             mail.setSubject("Cerere")
             mail.setMessageBody("Salut, Arthur, \n\nTe rog să-mi aprobi cererea anexată. \n\nMulțumesc! ", isHTML: false)
-            let imageData: NSData = getSavedImage(named: "request.png")!.pngData()! as NSData
-            mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "request.png")
+            
+//            let imageData: NSData = getSavedImage(named: "request.png")!.pngData()! as NSData
+//            mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "request.png")
+//
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let docURL = documentDirectory.appendingPathComponent("request.pdf")
+//            let pdfData = NSData(contentsOfFile: docURL.absoluteString)!
+            pdfData = NSData.init(contentsOf: docURL)
+            mail.addAttachmentData(pdfData! as Data, mimeType: "application/pdf", fileName: "cerere.pdf")
+            
             present(mail, animated: true)
         } else {
             // show failure alert
@@ -109,6 +117,14 @@ class OdihnaViewController: UIViewController, MFMailComposeViewControllerDelegat
         
         _ = saveImage(image: finalImage!,
                       name: "request.png")
+        
+        
+        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let docURL = documentDirectory.appendingPathComponent("request.pdf")
+
+        createPDF(image: finalImage!)?.write(to: docURL, atomically: true)
+        
+        
     }
 
 }
