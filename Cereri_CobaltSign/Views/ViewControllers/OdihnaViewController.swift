@@ -18,10 +18,6 @@ class OdihnaViewController: UIViewController, MFMailComposeViewControllerDelegat
         super.viewDidLoad()
     }
     
-    @IBAction func backAction(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func doSend(_ sender: Any) {
         if hrDate(date: startDatePicker.date) == hrDate(date: endDatePicker.date) && startDatePicker.date.isDateInWeekend {
             let alert = UIAlertController(title: "Oops",
