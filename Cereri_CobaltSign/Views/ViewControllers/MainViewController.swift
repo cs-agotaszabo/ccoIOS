@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        title = ""
     }
     
     override func viewDidAppear(_ animated: Bool) {

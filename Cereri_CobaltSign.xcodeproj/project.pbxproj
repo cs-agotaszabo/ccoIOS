@@ -23,6 +23,8 @@
 		A77CE0532543138A00D8C614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77CE0522543138A00D8C614 /* Assets.xcassets */; };
 		A77CE05E2543401400D8C614 /* OdihnaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE05D2543401400D8C614 /* OdihnaViewController.swift */; };
 		A77CE0632543402500D8C614 /* InvoireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77CE0622543402500D8C614 /* InvoireViewController.swift */; };
+		A7D3C92E254479BA00562289 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D3C92D254479BA00562289 /* Helpers.swift */; };
+		A7D3C933254482E500562289 /* CerereConcediu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D3C932254482E500562289 /* CerereConcediu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		A77CE0522543138A00D8C614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77CE05D2543401400D8C614 /* OdihnaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdihnaViewController.swift; sourceTree = "<group>"; };
 		A77CE0622543402500D8C614 /* InvoireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoireViewController.swift; sourceTree = "<group>"; };
+		A7D3C92D254479BA00562289 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A7D3C932254482E500562289 /* CerereConcediu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerereConcediu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 		A77CE04B2542DDC100D8C614 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A7D3C92D254479BA00562289 /* Helpers.swift */,
+				A7D3C932254482E500562289 /* CerereConcediu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,7 +332,9 @@
 			files = (
 				A7509F0C2544346800022320 /* PreviewViewController.swift in Sources */,
 				A77CE05E2543401400D8C614 /* OdihnaViewController.swift in Sources */,
+				A7D3C933254482E500562289 /* CerereConcediu.swift in Sources */,
 				A77CE0632543402500D8C614 /* InvoireViewController.swift in Sources */,
+				A7D3C92E254479BA00562289 /* Helpers.swift in Sources */,
 				A7509F11254444D700022320 /* Canvas.swift in Sources */,
 				A77CE01A2542DC3300D8C614 /* MainViewController.swift in Sources */,
 				A77CE0202542DC3300D8C614 /* Cereri_CobaltSign.xcdatamodeld in Sources */,
