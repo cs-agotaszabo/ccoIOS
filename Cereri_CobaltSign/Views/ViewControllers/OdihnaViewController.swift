@@ -53,9 +53,6 @@ class OdihnaViewController: UIViewController, MFMailComposeViewControllerDelegat
             mail.setSubject("Cerere")
             mail.setMessageBody("Salut, Arthur, \n\nTe rog să-mi aprobi cererea anexată. \n\nMulțumesc! ", isHTML: false)
             
-//            let imageData: NSData = getSavedImage(named: "request.png")!.pngData()! as NSData
-//            mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "request.png")
-//
             let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
             let docURL = documentDirectory.appendingPathComponent("request.pdf")
 //            let pdfData = NSData(contentsOfFile: docURL.absoluteString)!

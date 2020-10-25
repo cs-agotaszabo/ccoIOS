@@ -139,6 +139,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Trimite"/>
+                                <connections>
+                                    <action selector="sendRequest:" destination="s3a-uE-nJA" eventType="touchUpInside" id="5xF-6c-tj9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="În data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f5-Oh-bTu">
                                 <rect key="frame" x="40" y="112" width="374" height="24"/>

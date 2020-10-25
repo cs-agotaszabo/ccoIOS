@@ -79,6 +79,12 @@ func dateComponents(date: Date) -> (d: Int, m: Int, y: Int) {
 
 }
 
+func timeComponents(date: Date) -> (h: Int, m: Int) {
+    let cal = Calendar.current
+    let comp = cal.dateComponents([.hour, .minute], from: date)
+    return (comp.hour!, comp.minute!)
+}
+
 // MARK: Text
 func textToImage(drawText text: String,
                  inImage image: UIImage,
