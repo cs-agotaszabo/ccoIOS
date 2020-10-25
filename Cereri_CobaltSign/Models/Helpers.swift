@@ -89,7 +89,7 @@ func timeComponents(date: Date) -> (h: Int, m: Int) {
 func textToImage(drawText text: String,
                  inImage image: UIImage,
                  atPoint point: CGPoint) -> UIImage {
-    let textColor = UIColor.blue
+    let textColor = UIColor(named: "CobaltSignColor")
     let textFont = UIFont(name: "Helvetica Bold", size: 24)!
 
     let scale = UIScreen.main.scale

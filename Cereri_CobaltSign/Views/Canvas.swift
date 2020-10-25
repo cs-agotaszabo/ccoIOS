@@ -15,8 +15,8 @@ class Canvas: UIView {
         super.draw(rect)
         
         guard let context = UIGraphicsGetCurrentContext() else { return }
-        context.setStrokeColor(UIColor.blue.cgColor)
-        context.setLineWidth(3)
+        context.setStrokeColor(UIColor(named: "CobaltSignColor")!.cgColor)
+        context.setLineWidth(2)
         context.setLineCap(.butt)
         
         lines.forEach { (line) in
