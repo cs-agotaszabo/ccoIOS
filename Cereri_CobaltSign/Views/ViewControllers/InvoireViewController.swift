@@ -19,6 +19,16 @@ class InvoireViewController: UIViewController, MFMailComposeViewControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapGesture.numberOfTouchesRequired = 1
+        tapGesture.numberOfTapsRequired = 1
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc fileprivate func hideKeyboard() {
+        reasonText.resignFirstResponder()
+        recoveryProgramText.resignFirstResponder()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
